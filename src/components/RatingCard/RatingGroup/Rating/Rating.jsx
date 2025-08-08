@@ -1,6 +1,6 @@
-function Rating ({number}){
+function Rating ({number, selected, handleClick}){
   return (
-      <button className="rating rating--hover js-rating js-rating--select">
+      <button className={`rating rating--hover js-rating ${selected?"js-rating--select":""}`} onClick={handleClick}>
         {number}
       </button>
   )
