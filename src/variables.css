@@ -1,20 +1,27 @@
 :root {
-  /** Layouts **/
-  --layout-mobile: 375px;
-  --layout-desktop: 1440px;
-
-  /** Colours **/
-  --clr-orange: hsl(25, 97%, 53%);
-  --clr-white: hsl(0, 100%, 100%);
-  --clr-grey500: hsl(217, 12%, 63%);
-  --clr-grey900: hsl(213, 19%, 18%);
-  --clr-grey950: hsl(216, 12%, 8%);
-
-  /** Typography **/
-  --font-paragraph: 15px; 
-
-  --fw-regular: 400;
-  --fw-bold: 700;
+  --minWidth: 16.25rem;
+  --maxWidth-mobile: 20rem;
+  --maxWidth-desktop: 24rem;
 
   --ff-base: "Overpass", sans-serif;
+  --font-text: 0.9rem;
+  --font-header: 1.5rem;
+
+  --clr-orange-500: hsl(25, 97%, 53%);
+  --clr-white: hsl(0, 100%, 100%);
+  --clr-grey-500: hsl(217, 12%, 63%);
+  --clr-grey: #4e526f7a;
+  --clr-grey-900: hsl(213, 19%, 18%);
+  --clr-grey-950: hsl(216, 12%, 8%);
+
+  --clr-font: var(--clr-grey-500);
+  --clr-font-darkest: var(--clr-grey-950);
+  --clr-font-bright: var(--clr-orange-500);
+  --clr-font-header: var(--clr-white);
+
+  --clr-background-darkest: var(--clr-grey-950);
+  --clr-background-darker: var(--clr-grey-900);
+  --clr-background-neutral: var(--clr-grey);
+  --clr-background-bright: var(--clr-orange-500);
+  --clr-background-blank: var(--clr-white);
 }
