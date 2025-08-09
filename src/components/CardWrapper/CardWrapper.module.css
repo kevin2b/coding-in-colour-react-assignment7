@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 1.25rem;
+  background-color: var(--clr-background-darker);
+  padding: 1.5rem;
+  min-block-size: 21.875rem;
+}
+
+.card-2 {
+  text-align: center;
+  align-items: center;
+  padding-block: 2.4rem;
+}
+
+@media (min-width: 45rem) {
+  .card{
+    border-radius: 1.9rem;
+    padding-block: 1.75rem;
+    padding-inline: 2rem;
+    min-block-size: 25.3rem;
+  }
+
+  .card-2{
+    padding-block: 2.4rem;
+    padding-inline: 2rem;
+  }
+}

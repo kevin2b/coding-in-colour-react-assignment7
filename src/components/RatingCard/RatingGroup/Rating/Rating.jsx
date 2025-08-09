@@ -1,6 +1,7 @@
+import styles from './Rating.module.css';
 function Rating ({number, selected, handleClick}){
   return (
-      <button className={`rating rating--hover js-rating ${selected?"js-rating--select":""}`} onClick={handleClick}>
+      <button className={`${styles.rating} ${selected? styles["rating--select"] : ""}`} onClick={handleClick}>
         {number}
       </button>
   )

@@ -1,0 +1,13 @@
+.wrapper {
+  max-inline-size: var(--maxWidth-mobile);
+  margin-block: max(1rem, 10vh);
+  margin-inline: auto;
+  font-size: var(--font-text);
+  color: var(--clr-font);
+}
+
+  @media (min-width: 45rem) {
+    .wrapper {
+      max-inline-size: var(--maxWidth-desktop);
+    }
+  }

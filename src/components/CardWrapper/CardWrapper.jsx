@@ -1,6 +1,8 @@
+import styles from './CardWrapper.module.css'
+
 function CardWrapper ({className = "", children}){
   return (
-    <div className={`card ${className}`}>
+    <div className={`${styles.card} ${className}`}>
       {children}
     </div>
   )

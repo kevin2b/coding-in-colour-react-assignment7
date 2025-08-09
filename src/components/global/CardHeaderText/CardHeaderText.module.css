@@ -1,0 +1,18 @@
+.card__header-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-block-start: 0.25rem;
+}
+
+.card__header {
+  color: var(--clr-font-header);
+  font-weight: 700;
+  font-size: var(--font-header);
+}
+
+@media (min-width: 45rem) {
+  .card__header-wrapper{
+    margin-block-start: 0.75rem;
+  }
+}

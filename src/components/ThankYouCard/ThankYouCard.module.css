@@ -1,0 +1,24 @@
+.card__img {
+  display: block;
+  margin-inline: auto;
+  max-inline-size: 50%;
+  inline-size: 50%;
+  block-size: auto;
+  object-fit: cover;
+}
+
+.card__selected {
+  display: inline;
+  color: var(--clr-font-bright);
+  background-color: var(--clr-background-neutral);
+  padding-block: 0.3rem;
+  padding-inline: 0.9rem;
+  border-radius: 2rem;
+}
+
+@media (min-width: 45rem) {
+  .card__selected {
+    margin-block-start: 0.5rem;
+    padding-inline: 1.25rem;
+  }
+}

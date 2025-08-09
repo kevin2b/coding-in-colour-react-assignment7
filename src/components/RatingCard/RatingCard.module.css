@@ -1,0 +1,50 @@
+.circle-container {
+  display: inline;
+  border-radius: 50%;
+  inline-size: 2.5rem;
+  block-size: 2.5rem;
+  background-color: var(--clr-background-neutral);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle__star {
+  display: block;
+  max-block-size: 0.8rem;
+  block-size: 100%;
+  inline-size: auto;
+}
+
+.card__submit {
+  border-radius: 3rem;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background-color: var(--clr-background-bright);
+  color: var(--clr-font-darkest);
+  font-weight: 700;
+  padding-block: 0.9rem;
+  padding-inline: 1rem;
+}
+
+.card__submit:hover,
+.card__submit:focus-visible {
+  cursor: pointer;
+  background-color: var(--clr-background-blank);
+}
+
+@media (min-width: 45rem) {
+  .circle-container {
+    inline-size: 3rem;
+    block-size: 3rem;
+  }
+
+  .circle__star {
+    max-block-size: 1rem;
+  }
+
+  .card__submit{
+    padding-inline: 1rem;
+  }
+}

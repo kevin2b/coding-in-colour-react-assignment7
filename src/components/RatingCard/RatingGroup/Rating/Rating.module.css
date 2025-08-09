@@ -1,0 +1,28 @@
+.rating {
+  border-radius: 50%;
+  inline-size: 2.5rem;
+  block-size: 2.5rem;
+  background-color: var(--clr-background-neutral);
+  color: var(--font-text);
+  font-weight: 700;
+  border: none;
+}
+
+.rating:hover,
+.rating:focus-visible {
+  cursor: pointer;
+  background-color: var(--clr-background-bright);
+  color: var(--clr-font-darkest);
+}
+
+.rating--select {
+  background-color: var(--clr-background-blank);
+  color: var(--clr-font-darkest);
+}
+
+@media (min-width: 45rem) {
+  .rating {
+    inline-size: 3.25rem;
+    block-size: 3.25rem;
+  }
+}
