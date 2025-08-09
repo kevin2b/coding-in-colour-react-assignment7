@@ -1,11 +1,15 @@
 :root {
   --minWidth: 16.25rem;
   --maxWidth-mobile: 20rem;
-  --maxWidth-desktop: 24rem;
+  --maxWidth-desktop: 25.5rem;
 
   --ff-base: "Overpass", sans-serif;
-  --font-text: 0.9rem;
+  --font-text: 0.85rem;
   --font-header: 1.5rem;
+  @media (min-width: 45rem) {
+    --font-text: 0.95rem;
+    --font-header: 1.65rem;
+  }
 
   --clr-orange-500: hsl(25, 97%, 53%);
   --clr-white: hsl(0, 100%, 100%);
@@ -25,3 +29,4 @@
   --clr-background-bright: var(--clr-orange-500);
   --clr-background-blank: var(--clr-white);
 }
+

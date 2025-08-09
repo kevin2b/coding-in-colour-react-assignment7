@@ -21,11 +21,15 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 1.25rem;
   background-color: var(--clr-background-darker);
   padding: 1.5rem;
+  min-block-size: 21.875rem;
   @media (min-width: 45rem) {
-    border-radius: 1.5rem;
+    border-radius: 1.9rem;
+    padding-block: 1.75rem;
+    padding-inline: 2rem;
+    min-block-size: 25.3rem;
   }
 }
 
@@ -46,13 +50,24 @@
 
 .circle__star {
   display: block;
-  max-block-size: 0.75rem;
+  max-block-size: 0.8rem;
   block-size: 100%;
   inline-size: auto;
   @media (min-width: 45rem) {
     max-block-size: 1rem;
   }
 }
+
+.card__header-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-block-start: 0.25rem;
+  @media (min-width: 45rem) {
+    margin-block-start: 0.75rem;
+  }
+}
+
 
 .card__header {
   color: var(--clr-font-header);
@@ -75,8 +90,8 @@
   font-weight: 700;
   border: none;
   @media (min-width: 45rem) {
-    inline-size: 3rem;
-    block-size: 3rem;
+    inline-size: 3.25rem;
+    block-size: 3.25rem;
   }
 }
 
@@ -100,7 +115,11 @@
   background-color: var(--clr-background-bright);
   color: var(--clr-font-darkest);
   font-weight: 700;
-  padding: 1rem;
+  padding-block: 0.9rem;
+  padding-inline: 1rem;
+  @media (min-width: 45rem) {
+    padding-inline: 1rem;
+  }
 }
 
 .card__submit--hover:hover,
@@ -112,6 +131,11 @@
 .card-2 {
   text-align: center;
   align-items: center;
+  padding-block: 2.4rem;
+  @media (min-width: 45rem) {
+    padding-block: 2.4rem;
+    padding-inline: 2rem;
+  }
 }
 
 .card__img {
@@ -127,8 +151,13 @@
   display: inline;
   color: var(--clr-font-bright);
   background-color: var(--clr-background-neutral);
-  padding: 0.5rem;
+  padding-block: 0.3rem;
+  padding-inline: 0.9rem;
   border-radius: 2rem;
+  @media (min-width: 45rem) {
+    margin-block-start: 0.5rem;
+    padding-inline: 1.25rem;
+  }
 }
 
 .js-hidden {
